@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  rcfpoc:
+    build: .
+    image: "rcfpoc:latest"
+    container_name: rcfpoc
+    restart: always
+    command: ['tail', '-f', '/dev/null']
+    extra_hosts:
+      - "EOS1:172.31.0.11"
+      - "EOS2:172.31.0.12"
+      - "EOS3:172.31.0.13"
+      - "EOS4:172.31.0.14"
+      - "EOS5:172.31.0.15"
+      - "EOS6:172.31.0.16"
+      - "EOS7:172.31.0.17"
+      - "EOS8:172.31.0.18"
+      - "EOS9:172.31.0.19"
+      - "EOS10:172.31.0.20"
+      - "EOS11:172.31.0.21"
+      - "EOS12:172.31.0.22"
+      - "EOS13:172.31.0.23"
+      - "EOS14:172.31.0.24"
+      - "EOS15:172.31.0.25"
+      - "EOS16:172.31.0.26"
+      - "EOS17:172.31.0.27"
+      - "EOS18:172.31.0.28"
+      - "EOS19:172.31.0.29"
+      - "EOS20:172.31.0.30"
+      - "EOS21:172.31.0.31"
+      - "EOS22:172.31.0.32"
+      - "EOS23:172.31.0.33"
+
+    environment:
+      - TZ=America/New_York
+      - DEBIAN_FRONTEND=noninteractive
+    volumes:
+      - ../:/workspace

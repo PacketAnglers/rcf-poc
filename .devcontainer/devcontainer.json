@@ -1,0 +1,34 @@
+{
+	"name": "rcfpoc",
+	"workspaceFolder": "/workspace",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "rcfpoc",
+    "features": {
+        "github-cli": "latest",
+	"sshd": "latest"
+	},
+	"customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "Catppuccin.catppuccin-vsc",
+                "redhat.ansible",
+                "github.vscode-pull-request-github",
+                "ms-python.python",
+                "redhat.vscode-yaml",
+                "PKief.material-icon-theme",
+                "samuelcolvin.jinjahtml",
+                "johnpapa.vscode-peacock",
+                "yzhang.markdown-all-in-one",
+                "ms-azuretools.vscode-docker",
+                "davidanson.vscode-markdownlint",
+                "yzhang.markdown-all-in-one",
+                "oderwat.indent-rainbow",
+                "AykutSarac.jsoncrack-vscode",
+                "hilleer.yaml-plus-json"
+	        ]
+        }
+    },
+    "forwardPorts": [8000, 8000],
+	"shutdownAction": "stopCompose"
+}
